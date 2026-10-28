@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.6.2"
+  version: "4.6.4"
 
 package:
   name: couchbase
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/c/couchbase/couchbase-${{ version }}.tar.gz
-    sha256: c660549f8c87354837364aa48b84268a4778fd4a0c0a9db41cbf5eab1b11d70c
+    sha256: 5f2282661eb78af021e7e34cb6131e4e69d66d3f9cd3a5137bef3d9b0589bbb5
   # The vendored Asio (deps/couchbase-cxx-cache/asio, built as a static lib and
   # linked into _core) ships no license text in the sdist; fetch it from the tag
   # ThirdPartyDependencies.cmake pins.
@@ -19,7 +19,7 @@ source:
     file_name: asio-LICENSE_1_0.txt
 
 build:
-  number: 1
+  number: 0
   script:
     env:
       PYCBC_USE_CPM_CACHE: "true"
